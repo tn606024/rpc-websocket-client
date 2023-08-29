@@ -218,10 +218,10 @@ export class RpcWebSocketClient {
                 // stop waiting for response
                 delete this.idAwaiter[data.id];
 
-                if (this.isRpcError(responseData)) {
-                    reject(responseData);
-                    return;
-                }
+                // if (this.isRpcError(responseData)) {
+                //     reject(responseData);
+                //     return;
+                // }
 
                 resolve(responseData);
             };
