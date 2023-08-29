@@ -26,6 +26,7 @@
         "node": ">=6.0.0"
     },
     "scripts": {
+        "prepare": "npm run build",
         "lint": "tslint  --project tsconfig.json -t codeFrame 'src/**/*.ts' 'test/**/*.ts'",
         "prebuild": "rimraf dist",
         "build": "tsc --project tsconfig.build.json && rollup -c rollup.config.ts",
